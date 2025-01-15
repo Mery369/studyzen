@@ -1,0 +1,17 @@
+<h2>{{ user_profile.user.username }}'s Profile</h2>
+
+{% if user_profile.user.role == 'student' %}
+    <p>This user is a student. No additional profile information available.</p>
+{% elif user_profile.is_therapist %}
+    <h3>Therapist Profile</h3>
+    <img src="{{ user_profile.profile_picture.url }}" alt="Profile Picture" />
+    <p><strong>Bio:</strong> {{ user_profile.bio }}</p>
+    <p><strong>Speciality:</strong> {{ user_profile.speciality }}</p>
+    <p><strong>Availability:</strong> {{ user_profile.availability }}</p>
+{% elif user_profile.is_instructor %}
+    <h3>Instructor Profile</h3>
+    <img src="{{ user_profile.profile_picture.url }}" alt="Profile Picture" />
+    <p><strong>Bio:</strong> {{ user_profile.bio }}</p>
+    <p><strong>Speciality:</strong> {{ user_profile.speciality }}</p>
+    <p><strong>Availability:</strong> {{ user_profile.availability }}</p>
+{% endif %}
