@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyZen</title>
+</head>
+<body>
+
+
+<!-- home.html content starts here -->
+<!-- Hero section  -->
+
+<section id="hero-outer">
+    <!-- credit hero image, blue veg picture: https://img.freepik.com/free-photo/bright-display-different-citrus-fruits-sorted-by-color_157027-4422.jpg?t=st=1735852217~exp=1735855817~hmac=2d3d69ddd762deb27625a26b9d3533e64c0b02979b671aab8a2ce78e32a807f7&w=1800 -->
+    <div class="container d-flex align-items-center">
+        <div class="col-md-6">
+            <div class="cover-text">
+                <h2>Your well-being</h2>
+                <p class="lead">We strive to ensure that every learner can thrive . If you need support, we’re here to help.</p>
+                <a href="{% url 'accounts:signup' %}" class="btn btn-lg btn-primary">Join</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="hero-image-container">
+                <img src="{% static 'images/medtbl.jpg' %}" class="img-fluid rounded " alt="Mediterranean food">
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container d-flex align-items-center">
+    <div class="col-md-6">
+        <div class="hero-image-container">
+            <img src="{% static 'images/medtbl.jpg' %}" class="img-fluid rounded " alt="Mediterranean food">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="cover-text">
+            <h2>What's well-being</h2>
+            <p class="lead">
+            We all have mental health, just as we have physical health, and it’s important that we look after both of these.
+            One in four of us experience a mental health issue every year. Looking after your mental
+            health and well-being is so important and we are here to support you with this if and when you need us.
+            </p>
+            <a href="{% url 'accounts:signup' %}" class="btn btn-lg btn-primary">Join</a>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Explore More wellbeing  -->
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="recipe-header">We have a rich library of resources to help and support you with new 
+                content being added on a regular basis.</h2><br/>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card mb-4">
+                
+                <img src="{% static 'images/fveg.jpg' %}" class="card-img-top" alt="Mediterranean Dish 1">
+                <div class="card-body">
+                    <h5 class="card-title">Podcast</h5>
+                    <p class="card-text">Look after your well-being whilst you study with our popular Learn Better Podcast. </p>
+                    <a href="https://kaplan.co.uk/learn-better-podcast"
+                        class="btn btn-primary" target= "_blank" >Listen Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{% static 'images/diet.jpg' %}" class="card-img-top" alt="Mediterranean pan">
+                <div class="card-body">
+                    <h5 class="card-title">Webinars</h5>
+                    <p class="card-text">Follow us on Eventbrite for our personal development and mental health webinars. </p>
+                    <a href="https://www.eventbrite.co.uk/o/kaplan-29074459471"
+                        class="btn btn-primary" target="_blank" >Join Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{% static 'images/weight-loss.jpg' %}" class="card-img-top" alt="slim waste measure">
+                <div class="card-body">
+                    <h5 class="card-title">Videos</h5>
+                    <p class="card-text">Head over to our YouTube channel and watch our previous webinars with expert guests.</p>
+                    <a href="https://www.youtube.com/playlist?list=PL8GAUHw9zWbdIG5--ye84iATHg1hT6lxe"
+                        class="btn btn-primary" target="_blank" >Watch Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
